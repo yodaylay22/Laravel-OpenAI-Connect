@@ -1,4 +1,4 @@
-# Laravel OpenAI Connect
+# Laravel OpenAI Connect Lib
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/yeloi/laravel-openai-connect.svg?style=flat-square)](https://packagist.org/packages/yeloi/laravel-openai-connect)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/yeloi/laravel-openai-connect/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/yeloi/laravel-openai-connect/actions?query=workflow%3Arun-tests+branch%3Amain)
