@@ -35,8 +35,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Connectors\\OpenAIConnect\\": "src",
-            "Connectors\\OpenAIConnect\\Database\\Factories\\": "database/factories"
+            "Connectors\\OpenAIConnect\\": "src"
         }
     },
     "autoload-dev": {

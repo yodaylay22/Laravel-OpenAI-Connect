@@ -2,7 +2,7 @@
 
 namespace Connectors\OpenAIConnect;
 
-class OpenIA
+class OpenAI
 {
     public static function model($name)
     {

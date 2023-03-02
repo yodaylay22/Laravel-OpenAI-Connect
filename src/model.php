@@ -21,7 +21,7 @@ class model
         $this->model = $model;
         $this->system = ['role' => 'system', 'content' => null];
         $this->prompt = [];
-        $this->apikey = env('OPENIA_API_KEY');
+        $this->apikey = env('OpenAI_API_KEY');
         $this->options = [];
 
         return $this;

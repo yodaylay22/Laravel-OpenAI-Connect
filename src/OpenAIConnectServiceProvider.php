@@ -15,11 +15,6 @@ class OpenAIConnectServiceProvider extends PackageServiceProvider
          *
          * More info: https://github.com/spatie/laravel-package-tools
          */
-        $package
-            ->name('laravel-openai-connect')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-openai-connect_table')
-            ->hasCommand(OpenAIConnectCommand::class);
+        $package->name('laravel-openai-connect');
     }
 }

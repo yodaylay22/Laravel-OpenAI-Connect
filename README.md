@@ -18,7 +18,7 @@ composer require yeloi/laravel-openai-connect
 ## Usage
 
 ```php
-use Connectors\OpenAIConnect\OpenIA;
+use Connectors\OpenAIConnect\OpenAI;
 
 
 $system = "You are a tech company employee named bob.";
@@ -26,7 +26,7 @@ $message = [
     ["role" => "user", "content" => "what is your name?"],
 ];
 
-$data = OpenIA::model('gpt-3.5-turbo')->system($system)->prompt($message)->options(['max_tokens' => 1000])->send();
+$data = OpenAI::model('gpt-3.5-turbo')->system($system)->prompt($message)->options(['max_tokens' => 1000])->send();
 
 dd($data->message);
 // My name is Bob. How can I assist you today?
