@@ -1,4 +1,4 @@
-# The Laravel-OpenAI-Connect package makes it easy to integrate OpenAI's cutting-edge machine learning capabilities into Laravel applications.
+# The Laravel-OpenAI-Connect package makes it easy to integrate OpenAI.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ycore/laravel-openai-connect.svg?style=flat-square)](https://packagist.org/packages/ycore/laravel-openai-connect)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/ycore/laravel-openai-connect/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/ycore/laravel-openai-connect/actions?query=workflow%3Arun-tests+branch%3Amain)
@@ -23,37 +23,22 @@ You can install the package via composer:
 composer require ycore/laravel-openai-connect
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="laravel-openai-connect-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="laravel-openai-connect-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="laravel-openai-connect-views"
-```
-
 ## Usage
 
 ```php
-$openAIConnect = new Connectors\OpenAIConnect();
-echo $openAIConnect->echoPhrase('Hello, Connectors!');
+use Connectors\OpenAIConnect\OpenIA;
+
+
+    $system = "You are a tech company employee named bob.";
+    $message = [
+        ["role" => "user", "content" => "what is your name?"],
+    ];
+
+    $data = OpenIA::model('gpt-3.5-turbo')->system($system)->prompt($message)->options(['max_tokens' => 1000])->send();
+
+    dd($data->message);
+    // My name is Bob. How can I assist you today?
+
 ```
 
 ## Testing
