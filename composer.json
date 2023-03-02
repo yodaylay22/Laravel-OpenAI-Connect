@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "ycore/laravel-openai-connect",
+    "description": "The Laravel-OpenAI-Connect package makes it easy to integrate OpenAI's cutting-edge machine learning capabilities into Laravel applications.",
     "keywords": [
-        ":vendor_name",
+        "ycore",
         "laravel",
-        ":package_slug"
+        "laravel-openai-connect"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/ycore/laravel-openai-connect",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Yuri Eloi",
+            "email": "yodaylay22@gmail.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Connectors\\OpenAIConnect\\": "src",
+            "Connectors\\OpenAIConnect\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Connectors\\OpenAIConnect\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -61,10 +61,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Connectors\\OpenAIConnect\\OpenAIConnectServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "OpenAIConnect": "Connectors\\OpenAIConnect\\Facades\\OpenAIConnect"
             }
         }
     },
