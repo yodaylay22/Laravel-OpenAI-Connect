@@ -1,12 +1,12 @@
 {
-    "name": "ycore/laravel-openai-connect",
+    "name": "yeloi/laravel-openai-connect",
     "description": "The Laravel-OpenAI-Connect package makes it easy to integrate OpenAI's cutting-edge machine learning capabilities into Laravel applications.",
     "keywords": [
-        "ycore",
+        "yeloi",
         "laravel",
         "laravel-openai-connect"
     ],
-    "homepage": "https://github.com/ycore/laravel-openai-connect",
+    "homepage": "https://github.com/yeloi/laravel-openai-connect",
     "license": "MIT",
     "authors": [
         {
