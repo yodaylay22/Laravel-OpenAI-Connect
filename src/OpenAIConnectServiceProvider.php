@@ -2,7 +2,6 @@
 
 namespace Connectors\OpenAIConnect;
 
-use Connectors\OpenAIConnect\Commands\OpenAIConnectCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
