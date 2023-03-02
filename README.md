@@ -15,6 +15,12 @@ You can install the package via composer:
 composer require yeloi/laravel-openai-connect
 ```
 
+Add to your env file the openia api key:
+
+```bash
+OPENIA_API_KEY=<secret_key>
+```
+
 ## Usage
 
 ```php
