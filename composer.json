@@ -68,5 +68,7 @@
                 "OpenAIConnect": "Connectors\\OpenAIConnect\\Facades\\OpenAIConnect"
             }
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
