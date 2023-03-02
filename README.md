@@ -18,7 +18,7 @@ composer require yeloi/laravel-openai-connect
 Add to your env file the openia api key:
 
 ```bash
-OPENIA_API_KEY=<secret_key>
+OPENAI_API_KEY=<secret_key>
 ```
 
 ## Usage
