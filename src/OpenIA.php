@@ -4,7 +4,8 @@ namespace Connectors\OpenAIConnect;
 
 class OpenIA
 {
-    public static function model($name) {
+    public static function model($name)
+    {
         return new model($name);
     }
 }

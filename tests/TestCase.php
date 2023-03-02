@@ -2,9 +2,9 @@
 
 namespace Connectors\OpenAIConnect\Tests;
 
+use Connectors\OpenAIConnect\OpenAIConnectServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Connectors\OpenAIConnect\OpenAIConnectServiceProvider;
 
 class TestCase extends Orchestra
 {
